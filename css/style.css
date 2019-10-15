@@ -1,0 +1,555 @@
+/**
+ * CONTENTS
+ *
+ *	#Bases
+ *
+ *	#Layout
+ *	
+ * 	#Graphic Charter
+ *
+ */
+/*------------------------------------*\
+  #RESET CSS
+\*------------------------------------*/
+h2 {
+	margin: 0px;
+}
+
+h3 {
+	margin: 0;
+}
+
+p {
+	margin:0;
+}
+/*test reset*/
+
+
+/*------------------------------------*\
+  #Bases
+\*------------------------------------*/
+body {
+	background-color: #fafafa;
+	font-family: "Open Sans", Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	max-width: 100%;
+	object-fit: cover;
+}
+
+.container-width {
+	max-width: 70rem;
+	margin: 0 auto;
+}
+
+/*------------------------------------*\
+  #Layout
+\*------------------------------------*/
+.section-header {
+	position: fixed;
+	z-index: 1000;
+    background-color: rgba(250, 250, 250, 0.90);
+    width: 100%;
+    border-bottom: 1px solid #efefef;
+}
+
+.panel-header {
+	height: 70px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 0.9rem;
+}
+
+
+.section-skills {
+	padding-bottom: 2rem;
+}
+
+.card-team {
+	max-width: 380px;
+	margin: 0 auto;
+	padding: 0 1rem;
+}
+
+.card-facts {
+	padding: 2rem;
+	text-align: center;
+}
+
+.panel-footer {
+	display: flex;
+	justify-content: space-between;
+	margin: 3rem 0.9rem;
+}
+
+.panel-services {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 0 0.9rem;
+	padding-bottom: 4rem;
+}
+
+.panel-testim__name-role {
+	display: flex;
+	justify-content: center;
+}
+
+.panel-partners {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+}
+
+@media screen and (max-width: 900px) {
+	.panel-services {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+@media screen and (min-width: 790px) {
+	.panel-team {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	}
+
+	.panel-about {
+		display: flex;
+		justify-content: space-between;
+		padding: 0 1rem;
+	}
+
+	.panel-skills {
+		display: flex;
+		justify-content: space-between;
+		
+	}
+
+	.card-skills {
+		flex: 2;
+		margin-right: 1rem;
+	}
+
+	.card-skills__img {
+		flex: 1;
+	}
+
+	.panel-facts {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.panel-partners {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.panel-contact {
+		display: flex;
+		justify-content: space-between;
+		padding: 0 0.9rem;
+	}
+
+}
+
+
+
+/* TEST */ 
+
+.section-slider { /*pour mettre h1 sur image*/
+	position: relative;
+  	text-align: center;
+  	padding-top: 70px;
+}
+
+
+
+/*------------------------------------*\
+  #GRAPHIC CHARTER
+\*------------------------------------*/
+
+.section-quote {
+	background-image: url("../../img/parallax_quote.jpg");
+}
+
+.parallax {
+	background-attachment: fixed;
+ 	background-position: center;
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+}
+.panel-quote {
+	background-color: rgba(0, 0, 0, 0.70);
+	padding: 6.25rem 0;
+}
+
+
+.section-services {
+	background-image: url("../../img/parallax_services.jpg");
+	background-position: center;
+}
+
+.services-bg-opacity {
+	background-color: rgba(255, 255, 255, 0.70);
+}
+
+.card-services {
+	text-align: center;
+}
+
+.section-partners {
+	background-color: #fe7e17;
+	padding: 1.25rem 0.9rem;
+}
+
+
+.section-contact {
+	background-image: url("../../img/parallax_contact.jpg");
+	background-position: center;
+}
+
+.contact-bg-opacity {
+	background-color: rgba(0, 0, 0, 0.70);
+}
+
+.panel-about, .panel-skills, .panel-team {
+	padding: 0 0.9rem;
+}
+
+.panel-team {
+	padding-bottom: 4rem;
+}
+/*colors and fonts*/
+
+.card-header a {
+	text-transform: uppercase;
+	color: #323232;
+	font-size: 0.875rem;
+	font-weight: 700;
+	text-decoration: none;
+	border-bottom: 1px solid rgba(255, 0, 0, 0);
+	padding-bottom: 2px;
+	margin: 0 25px;
+}
+
+.card-header a:active {
+	color: #fe7e17;
+	border-bottom: 1px solid #fe7e17;
+	padding-bottom: 2px;
+}
+
+.card-header a:hover {
+	color: #323232;
+	border-bottom: 1px solid #323232;
+	padding-bottom: 2px;
+}
+
+.card-team__socials a {
+	color: #686868;
+	text-decoration: none;
+}
+
+.card-team__socials a:hover {
+	color: #fe7e17;
+	text-decoration: none;
+}
+
+.card-services:hover {
+	background-color: #fe7e17;
+	color: #fafafa;
+	cursor: pointer;
+}
+
+.card-services {
+	font-size: 0.9rem;
+	font-weight: 800;
+	color: #323232;
+	text-decoration: none;
+	text-transform: uppercase;
+	border: 1px solid #686868;
+	padding: 3rem 2rem;
+	margin:1rem 0;
+}
+
+.card-services__details {
+	padding-top: 20px;
+}
+
+.card-about__details, .card-skills__details, .card-team__details {
+	font-weight: 300;
+	font-size: 0.94rem;
+	color: #686868;
+	margin-bottom: 1.4rem;
+}
+
+.section-team__details {
+	font-weight: 300;
+	font-size: 1rem;
+	color: #323232;
+	margin-bottom: 3rem;
+	text-align: center;
+}
+
+.card-team__name {
+	font-weight: 800;
+	font-size: 0.875rem;
+	color: #323232;
+	text-transform: uppercase;
+	margin-top: 1rem;
+	text-align: center;
+	max-width: 380px;
+}
+
+.card-team__name::after {
+	background: #fe7e17;
+	height: 1px;
+	margin: 10px auto;
+	display:flex;
+	width: 70px;
+	content: "";
+}
+
+.card-team__role {
+	font-weight: 300;
+	font-size: 0.875rem;
+	color: #323232;
+	margin-top: 0.8rem;
+	margin-bottom: 0.9rem;
+	text-align: center;
+	max-width: 380px;
+}
+
+.card-team__details {
+	max-width: 380px;
+	text-align: center;
+	color: #686868;
+	font-weight: 300;
+	font-size: 0.9rem;
+}
+
+.card-team__socials {
+	font-size: 0.875rem;
+	padding-bottom: 1.5rem;
+	text-align: center;
+	max-width: 380px;*/
+}
+.card-quote {
+	margin: 0.9rem;
+	color: #fafafa;
+}
+
+.card-quote__details {
+	font-size: 1.875rem;
+	font-weight: 300;
+	margin-bottom: 0.8rem;
+	text-align: center;
+}
+
+.card-quote__author {
+	font-weight: 700;
+	font-size: 0.9rem;
+	text-transform: uppercase;
+	text-align: right;
+}
+
+.panel-work {
+	padding-top: 1rem;
+	padding-bottom: 3rem;
+	text-align: center;
+}
+
+.card-work a {
+	font-size: 1rem;
+	font-weight: 300;
+	color: #686868;
+	text-decoration: none;
+	padding: 6px 12px;
+	margin: 0 2px;
+	text-align: center;
+}
+
+.card-work a:hover {
+	border: 1px solid #fe7e17;
+}
+
+.panel-facts {
+	padding-bottom: 6.25rem;
+}
+
+.card-facts__number {
+	font-weight: 700;
+	font-size: 3.5rem;
+	color: #323232;
+}
+
+.card-facts__details {
+	font-weight: 300;
+	font-size: 0.9rem;
+	color: #686868;
+	text-transform: uppercase;
+}
+
+.panel-testim__quote {
+	font-weight: 300;
+	font-size: 1.125rem;
+	color: #686868;
+	text-align: center;
+	margin: 1rem 3rem;
+}
+
+.panel-testim__name-role {
+	padding-top: 1rem;
+	padding-bottom: 3rem;
+}
+.panel-testim__name {
+	font-size: 0.875rem;
+	font-weight:700;
+	color: #fe7e17;
+}
+
+.panel-testim__role {
+	font-size: 0.875rem;
+	font-weight:700;
+	color: #323232;
+}
+
+.card-contact__heading {
+	color: #fff;
+	font-weight: 300;
+	font-size: 1.125rem;
+	margin-bottom: 2rem;
+}
+
+.fa-phone-alt, .fa-envelope, .fa-globe-americas {
+	color:#323232;
+	background-color: #fafafa;
+	padding: 4px;
+	margin-right: 15px;
+}
+
+.fa-map-marker-alt {
+	color:#323232;
+	background-color: #fafafa;
+	padding:4px 6px;
+	margin-right: 15px;
+}
+.subset-contact {
+	margin-bottom: 1.5rem;
+}
+
+.subset-contact__details {
+	color:#fafafa;
+	font-weight: 300;
+	font-size: 0.9rem;
+}
+
+.subset-contact a {
+	color:#fe7e17;
+	font-weight: 300;
+	font-size: 0.9rem;
+	text-decoration: none;
+}
+
+.subset-contact a:hover {
+	color:#fff;
+	font-weight: 300;
+	font-size: 0.9rem;
+	text-decoration: none;
+}
+
+.card-contact__input-name, .card-contact__input-mail, .card-contact__input-message {
+	border: 1px solid #fafafa;
+    color: #fafafa;
+    background: transparent;
+}
+
+.card-footer__details {
+	font-size: 0.875rem;
+	font-weight: 300;
+	color: #686868;
+}
+
+.card-footer a {
+	margin-left: 20px;
+	padding: 7px 12px;
+	border: 1px solid #686868;
+	text-decoration: none;
+	font-size: 0.875rem;
+	color: #686868;
+}
+
+.card-footer a:hover {
+	color: #fe7e17;
+	text-decoration: none;
+	border-color: #fe7e17;
+}
+
+/*heading*/
+
+.heading1 {
+ 	position: absolute;
+ 	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -100%);
+  	border: 1px solid #fafafa;
+  	padding: 0.7rem 1.5rem;
+  	text-transform: uppercase;
+  	font-weight: 700;
+  	font-size: 3rem;
+  	color: #fafafa;
+}
+
+.heading2 {
+	font-weight: 300;
+	font-size: 2.2rem;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: #323232;
+	text-align: center;
+	padding-top: 4rem;
+	padding-bottom: 3rem;
+}
+
+.heading2::after {
+	background: #fe7e17;
+	height: 1px;
+	margin: 15px auto;
+	display:flex;
+	width: 140px;
+	content: "";
+}
+.heading2__dark-bg {
+	font-weight: 300;
+	font-size: 2.2rem;
+	text-transform: uppercase;
+	color: #fafafa;
+	text-align: center;
+	padding-top: 4rem;
+	padding-bottom: 3rem;
+}
+
+ .heading2__dark-bg::after {
+	background: #fe7e17;
+	height: 1px;
+	margin: 15px auto;
+	display:flex;
+	width: 140px;
+	content: "";
+ }
+
+.card-about__heading3, .card-skills__heading3 {
+	text-transform: uppercase;
+	font-weight: 800;
+	color: #323232;
+	font-size: 1.5rem;
+	margin: 1rem 0;
+}
+
